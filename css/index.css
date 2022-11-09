@@ -39,7 +39,7 @@ body {
 
 .active,
 .ui-select .ui-btn:hover {
-  background-color: #714D33 !important;
+  background-color: #a31a48 !important;
   color: white !important;
 }
 
@@ -93,9 +93,13 @@ input {
   font-size: 12px !important;
   margin-top: 20px !important;
 }
-
-.green {
+.yellow {
   background-color: #eca203  !important;
+  color: white !important;
+  font-weight: normal !important;
+}
+.green {
+  background-color: #00FF00  !important;
   color: white !important;
   font-weight: normal !important;
 }

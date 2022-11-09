@@ -15,14 +15,12 @@
 </head>
 
 <body>
-    <!-- https://www.flaticon.com/ -->
-
-    <!-- PAGE "HOME" -->
+    <!-- Homepage-->
     <div data-role="page" id="page-home">
         <div data-role="panel" data-display="overlay" id="panel">
             <div style="text-align: center; margin-bottom: 50px;">
                 <h1>M-Expense</h1>
-                <img src="img/boyscout_logo.png" alt="Logo" width="75%">
+                <img src="img/Corgi.png" alt="Logo" width="75%">
             </div>
 
             <ul data-role="listview">
@@ -42,6 +40,11 @@
                     <a href="#page-about" data-transition="none">About</a>
                 </li>
             </ul>
+
+            <br><br><br>
+            <h3>Contact:</h3>
+            <p><strong>Author:</strong> Trần Hà Hoàng Khanh</p>
+            <p><strong>Email:</strong> <a href="mailto: khanhthhgcs190651@fpt.edu.vn">khanhthhgcs190651@fpt.edu.vn</a></p>
 
         </div>
 
@@ -119,12 +122,12 @@
         </div>
     </div>
 
-    <!-- PAGE "CREATE NEW ACCOUNT" -->
+    <!-- Create New "Trip Page"-->
     <div data-role="page" id="page-create">
         <div data-role="panel" data-display="overlay" id="panel">
             <div style="text-align: center; margin-bottom: 50px;">
                 <h1>M-Expense</h1>
-                <img src="img/boyscout_logo.png" alt="Logo" width="75%">
+                <img src="img/Corgi.png" alt="Logo" width="75%">
             </div>
 
             <ul data-role="listview">
@@ -147,8 +150,8 @@
 
             <br><br><br>
             <h3>Contact:</h3>
-            <p><strong>Author:</strong> Hồ Nguyễn Phú Bảo</p>
-            <p><strong>Email:</strong> <a href="mailto:baohnp@fe.edu.vn">baohnp@fe.edu.vn</a></p>
+            <p><strong>Author:</strong> Trần Hà Hoàng Khanh</p>
+            <p><strong>Email:</strong> <a href="mailto: khanhthhgcs190651@fpt.edu.vn">khanhthhgcs190651@fpt.edu.vn</a></p>
         </div>
 
         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="">
@@ -162,12 +165,12 @@
             <!-- Registration Form -->
             <form id="frm-register">
                 <label class="small-text">Trip Name</label>
-                <input type="text" id="name" data-clear-btn="true" placeholder="Enter trip name here..." required>
+                <input type="text" id="name" data-clear-btn="true" placeholder="Please, enter your Trip Name..." required>
 
                 <fieldset class="ui-grid-a" style="overflow: visible;">
                     <div class="ui-block-a" style="padding-right: 5px;">
                         <label class="small-text">Destination</label>
-                        <input type="text" placeholder="Enter destination here..." id="destination"
+                        <input type="text" placeholder="Please, enter your destination here..." id="destination"
                             data-clear-btn="true" required>
                     </div>
 
@@ -178,14 +181,14 @@
                 </fieldset>
 
                 <label class="small-text">Description</label>
-                <input type="text" placeholder="Enter description here..." id="description" data-clear-btn="true">
+                <input type="text" placeholder="Please, enter your description here..." id="description" data-clear-btn="true">
                 <label class="small-text">Required Risk Assessment</label>
                 <select id="risk" class="slider round" data-role="slider" data-mini="true">
-                    <option value="No" selected>No</option>
-                    <option value="Yes">Yes</option>
+                    <option value="No" selected>No Risk</option>
+                    <option value="Yes">Risk</option>
                 </select>
 
-                <button type="submit" class="green">Create Trip</button>
+                <button type="submit" class="yellow">Create Trip</button>
             </form>
 
             <!-- Confirm Registration -->
@@ -244,7 +247,7 @@
 
                     <li>
                         <a href="#page-list" data-transition="none"
-                            class="ui-btn ui-btn-b ui-icon-grid ui  -btn-icon-notext ui-nodisc-icon">List</a>
+                            class="ui-btn ui-btn-b ui-icon-grid ui-btn-icon-notext ui-nodisc-icon">List</a>
                     </li>
 
                     <li>
@@ -261,7 +264,7 @@
         <div data-role="panel" data-display="overlay" id="panel">
             <div style="text-align: center; margin-bottom: 50px;">
                 <h1>M-Expense</h1>
-                <img src="img/boyscout_logo.png" alt="Logo" width="75%">
+                <img src="img/Corgi.png" alt="Logo" width="75%">
             </div>
 
             <ul data-role="listview">
@@ -284,8 +287,8 @@
 
             <br><br><br>
             <h3>Contact:</h3>
-            <p><strong>Author:</strong> Hồ Nguyễn Phú Bảo</p>
-            <p><strong>Email:</strong> <a href="mailto:baohnp@fe.edu.vn">baohnp@fe.edu.vn</a></p>
+            <p><strong>Author:</strong> Trần Hà Hoàng Khanh</p>
+            <p><strong>Email:</strong> <a href="mailto: khanhthhgcs190651@fpt.edu.vn">khanhthhgcs190651@fpt.edu.vn</a></p>
         </div>
 
         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="">
@@ -315,7 +318,7 @@
 
             <form data-role="popup" id="frm-search" class="ui-content" style="width: 80vw;" data-overlay-theme="b">
                 <label class="small-text">Trip Name</label>
-                <input type="text" id="name" data-clear-btn="true" placeholder="Enter trip name here...">
+                <input type="text" id="name" data-clear-btn="true" placeholder="Please, enter you trip name...">
 
                 <label class="small-text">Destination</label>
                 <input type="text" placeholder="Enter destination here..." id="destination" data-clear-btn="true">
@@ -323,7 +326,7 @@
                 <label class="small-text">Date</label>
                 <input type="date" id="date">
 
-                <button type="submit" class="green">Search</button>
+                <button type="submit" class="yellow">Search</button>
             </form>
 
             <ul id="list-trip" data-role="listview" class="ui-nodisc-icon ui-alt-icon"></ul>
@@ -401,7 +404,7 @@
                     <div style="text-align: right;">
                         <a class="ui-btn ui-corner-all ui-btn-inline" data-rel="back">Cancel</a>
 
-                        <button type="submit" class="ui-btn ui-corner-all ui-btn-inline ui-disabled green"
+                        <button type="submit" class="ui-btn ui-corner-all ui-btn-inline ui-disabled red"
                             id="btn-delete">
                             Delete
                         </button>
@@ -429,15 +432,6 @@
                 <label class="small-text">Description</label>
                 <input type="text" placeholder="Enter description here..." id="description" data-clear-btn="true">
 
-                <label class="small-text">Custom 01 (Be Creative !!!)</label>
-                <input type="text" placeholder="Two or more other fields of your own invention." disabled>
-
-                <label class="small-text">Custom 02 (Be Creative !!!)</label>
-                <input type="text" placeholder="Two or more other fields of your own invention." disabled>
-
-                <label class="small-text">Custom ... (Be Creative !!!)</label>
-                <input type="text" placeholder="Two or more other fields of your own invention." disabled>
-
                 <label class="small-text">Required Risk Assessment</label>
                 <select id="risk" data-role="slider" data-mini="true">
                     <option value="No">No</option>
@@ -450,7 +444,7 @@
                     </div>
 
                     <div class="ui-block-b" style="padding: 5px;">
-                        <button type="submit" class="green">Update</button>
+                        <button type="submit" class="yellow">Update</button>
                     </div>
                 </div>
             </form>
@@ -479,20 +473,6 @@
                         <td id="risk"></td>
                     </tr>
 
-                    <tr>
-                        <th><img src="img/icon-custom.png" height="20px"></th>
-                        <td>Two or more other fields of your own invention.</td>
-                    </tr>
-
-                    <tr>
-                        <th><img src="img/icon-custom.png" height="20px"></th>
-                        <td>Two or more other fields of your own invention.</td>
-                    </tr>
-
-                    <tr>
-                        <th><img src="img/icon-custom.png" height="20px"></th>
-                        <td>Two or more other fields of your own invention.</td>
-                    </tr>
                 </table>
             </div>
 
@@ -596,7 +576,7 @@
         <div data-role="panel" data-display="overlay" id="panel">
             <div style="text-align: center; margin-bottom: 50px;">
                 <h1>M-Expense</h1>
-                <img src="img/boyscout_logo.png" alt="Logo" width="75%">
+                <img src="img/Corgi.png" alt="Logo" width="75%">
             </div>
 
             <ul data-role="listview">
@@ -619,8 +599,8 @@
 
             <br><br><br>
             <h3>Contact:</h3>
-            <p><strong>Author:</strong> Hồ Nguyễn Phú Bảo</p>
-            <p><strong>Email:</strong> <a href="mailto:baohnp@fe.edu.vn">baohnp@fe.edu.vn</a></p>
+            <p><strong>Author:</strong> Trần Hà Hoàng Khanh</p>
+            <p><strong>Email:</strong> <a href="mailto: khanhthhgcs190651@fpt.edu.vn">khanhthhgcs190651@fpt.edu.vn</a></p>
         </div>
 
         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-hide-during-focus="">
@@ -632,7 +612,15 @@
 
         <div data-role="main" class="ui-content" style="text-align: center;">
             <h1>M-EXPENSE</h1>
-            <img src="img/boyscout_logo.png" alt="Logo" width="150px" style="margin-bottom: 25px;">
+            <img src="img/Corgi.jpg" alt="Logo" width="400px" style="margin-bottom: 10px;">
+
+            <h2>Contact</h2>
+            <p style="margin-bottom: 7px;">Author</p>
+            <strong><em>Trần Hà Hoàng Khanh</em></strong>
+            <p style="margin-bottom: 7px; margin-top: 25px;">Email</p>
+            <strong><em><a href="mailto:khanhthhgcs190651@fpt.edu.vn">khanhthhgcs190651@fpt.edu.vn</a></em></strong>
+            <p style="margin-bottom: 7px; margin-top: 25px;">Telephone</p>
+            <strong><em><a href="tel:+84756786789">(84) 75 6786 789</a></em></strong>
 
         </div>
 
